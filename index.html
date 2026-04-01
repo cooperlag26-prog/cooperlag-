@@ -109,14 +109,16 @@ h1{
 }
 
 .buttons a{
-  display:inline-block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-decoration:none;
   padding:14px 22px;
   border-radius:12px;
   font-weight:bold;
-  margin-right:10px;
-  margin-bottom:10px;
   transition:0.3s;
+  min-width:200px;
+  height:50px;
 }
 
 .btn-outline{
@@ -468,12 +470,11 @@ h2 {
   }
 
   .buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    align-items:center;
-    justify-content:center;
-  }
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
+}
 
   .buttons a{
     width:100%;
