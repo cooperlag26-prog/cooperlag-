@@ -38,11 +38,22 @@ html{
   margin-top:20px;
 }
 
-/* Centraliza o post e remove margens estranhas */
+/* AJUSTE DO POST */
 .instagram-media{
   margin:auto !important;
-  max-width:100% !important;
   width:100% !important;
+  max-width:420px !important; /* tamanho no PC */
+  min-width:300px !important;
+  border-radius:18px;
+  overflow:hidden;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .instagram-media{
+    max-width:100% !important;
+    min-width:unset !important;
+  }
 }
 
 /* Botão Instagram */
